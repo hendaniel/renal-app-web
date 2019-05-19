@@ -14,6 +14,7 @@ export class InsertHabitComponent implements OnInit {
 
   constructor(private habitService: HabitService, private snack: MatSnackBar) {
     this.myHabit = new Habito();
+    this.myHabit.informacion = "";
   }
 
   ngOnInit() {}
@@ -21,10 +22,14 @@ export class InsertHabitComponent implements OnInit {
     
   }
   addNewHabit() {
-    console.log("add habit");
-    this.habitService.addHabitService(this.myHabit).subscribe();
-    this.snack.open("Sirvió: ","",{duration: 1000});
-    this.myHabit = new Habito();
+    if(this.myHabit.informacion != "" && this.myHabit.informacion != null && this.myHabit.imagen != "" && this.myHabit.imagen != null){
+      console.log("add habit");
+      this.habitService.addHabitService(this.myHabit).subscribe();
+      this.snack.open("Sirvió: ","",{duration: 1000});
+      this.myHabit = new Habito();
+      this.myHabit.informacion = "";
+    }
+ 
   }
 
 
