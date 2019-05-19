@@ -1,0 +1,34 @@
+.habit-input {
+    width: 90%;
+    padding: 5%
+  }
+  
+  .habit-field {
+    width: 100%;
+  }
+
+  .habit-url {
+    width: 100%;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    float: left;
+  }
+  .send {
+    color: #ffffff;
+    background-color: #008abe;
+    border: 1px solid #008abe;
+    border-radius: 10px;
+  }
+  .container {
+    padding: 5%;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+  }

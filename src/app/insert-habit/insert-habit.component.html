@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="box">
+    <form class="habit-input">
+      <mat-form-field class="habit-field">
+        <textarea matInput name="info" placeholder="Descripción hábito" [(ngModel)]="myHabit.informacion"></textarea>
+      </mat-form-field>
+        <mat-form-field class="habit-url">
+          <input matInput name="url" placeholder="URL de la imagen" [(ngModel)]="myHabit.imagen"/>
+        </mat-form-field>
+        
+    <button mat-raised-button class="send" name="send" color="primary" (click)="addNewHabit()">Añadir Hábito</button>
+    </form> 
+  </div>
+</div>
+
