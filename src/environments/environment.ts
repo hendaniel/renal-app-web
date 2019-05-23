@@ -6,7 +6,8 @@ const myIP = "localhost";
 export const environment = {
   production: false,
   //TODO
-  urlAddHabit:  "http://"+myIP+":8081/addHabito"
+  urlAddHabit:  "http://"+myIP+":8081/addHabito",
+  urlAddAlimento:  "http://"+myIP+":8081/AddAlimento"
 };
 
 /*

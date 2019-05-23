@@ -5,22 +5,27 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 
-
 import { InsertHabitComponent } from "./insert-habit/insert-habit.component";
-
-
-
 
 import {
   MatButtonModule,
   MatCheckboxModule,
   MatInputModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatSelectModule,
+  MatListModule,
+  MatCardModule,
+  MatIconModule
 } from "@angular/material";
 
 
+
+
+import { InsertProductComponent } from './insert-product/insert-product.component';
+
+
 @NgModule({
-  declarations: [AppComponent, InsertHabitComponent],
+  declarations: [AppComponent, InsertHabitComponent, InsertProductComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -28,7 +33,11 @@ import {
     MatCheckboxModule,
     MatInputModule,
     MatSnackBarModule,  
+    MatSelectModule,
+    MatListModule,
+    MatCardModule,
     FormsModule,
+    MatIconModule,
     HttpClientModule
   ],
   providers: [],

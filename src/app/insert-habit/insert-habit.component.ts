@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { HabitService } from "../services/habit.service";
-import { Habito } from '../models/habito';
+import { Habito } from '../models/base';
 import { Observable } from 'rxjs';
 import { MatSnackBar } from '@angular/material';
 
