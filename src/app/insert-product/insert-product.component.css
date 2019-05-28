@@ -2,6 +2,39 @@
     background-color: bisque;
 }
 
+.porperty-button{
+    background-color: green;
+}
+
+
 .cardProduct{
     background-color: blanchedalmond;
 }
+
+.container {
+    padding-left: 5%;
+    padding-top: 2%;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50%;
+  }
+  .box {
+    border-radius: 10px;
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    float: left;
+  }
+  .product-input{
+      width: 80%;
+  }
+
+  .container2 {
+    padding-right: 5%;
+    padding-top: 2%;
+    background-color: whitesmoke;
+    width: 50%;
+    height: 50%;
+  }

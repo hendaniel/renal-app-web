@@ -1,59 +1,70 @@
-    <mat-form-field>
-        <mat-label>Categoria</mat-label>
-        <input matInput required [(ngModel)]="myProduct.categoria" type="text" name="category" />
-      </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>Nombre</mat-label>
-        <input matInput required [(ngModel)]="myProduct.nombre"  name="name" />
-      </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>Tipo</mat-label>
-        <input matInput required [(ngModel)]="myProduct.tipo" type="text" name="type" />
-      </mat-form-field>
-    <br>
-    <mat-form-field>
+<div class="container">
+  <h3>Agregar Alimento</h3>
+  <div class="box">
+  <mat-form-field class="product-input">
+    <mat-label>Categoria</mat-label>
+    <input matInput required [(ngModel)]="myProduct.categoria" type="text" name="category" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="product-input">
+    <mat-label>Nombre</mat-label>
+    <input matInput required [(ngModel)]="myProduct.nombre" name="name" />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="product-input">
+    <mat-label>Tipo</mat-label>
+    <input matInput required [(ngModel)]="myProduct.tipo" type="text" name="type"/>
+  </mat-form-field>
+  <br />
+</div>
+</div>
+<div class="container">
+  <div class="box">
+    <mat-form-field class="product-input">
       <mat-label>Propiedad a agregar</mat-label>
-      <mat-select matNativeControl required [(value)]="j" required (selectionChange)="onChange(j)">  
-        <mat-option *ngFor="let item of propertyNames, let i = index"  [value]="i">{{item}} </mat-option >
-        </mat-select>
-      </mat-form-field>
-      <br>
-      <mat-form-field>
-        <span matSuffix >{{propertyUnits[j]}}</span>
-        <mat-label>Magnitud a añadir</mat-label>
-        <input matInput required [(ngModel)]="val" type="number" name="mag" />
-      </mat-form-field>
-      <br>
-      
-      <button mat-raised-button color="primary"  (click)="addProperty(j,val)">Añadir valor a propiedad</button>
-      
+      <mat-select matNativeControl required [(value)]="j" required (selectionChange)="onChange(j)">
+        <mat-option *ngFor="let item of propertyNames; let i = index" [value]="i" >{{ item }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="product-input">
+    <span matSuffix>{{ propertyUnits[j] }}</span>
+    <mat-label>Magnitud a añadir</mat-label>
+    <input matInput required [(ngModel)]="val" type="number" name="mag" />
+  </mat-form-field>
+  <br />
+
+  <button class="porperty-button" mat-raised-button color="primary" (click)="addProperty(j, val)">
+    Añadir valor a propiedad
+  </button>
+  </div>
+</div>
+
+<div class="container2">
       <mat-card class="cardProduct">
         <h2>Alimento</h2>
-        <p>{{myProduct.categoria}}</p>
-        <p>{{myProduct.nombre}}</p>
-        <p>{{myProduct.tipo}}</p>
-
-
+        <p>{{ myProduct.categoria }}</p>
+        <p>{{ myProduct.nombre }}</p>
+        <p>{{ myProduct.tipo }}</p>
       </mat-card>
-     
+      
       <mat-card class="cardProperties">
         <h3 mat-subheader>Propiedades</h3>
         <mat-grid-list cols="5" rowHeight="4:1">
           <div>
-            <mat-grid-tile *ngFor="let d of myProperties; let k = index" >
-              <h4 mat-line>{{propertyNames[k]}}: </h4>  
-              <p mat-line>{{myProperties[k]}} {{propertyUnits[k]}}</p>
+            <mat-grid-tile *ngFor="let d of myProperties; let k = index">
+              <h4 mat-line>{{ propertyNames[k] }}:</h4>
+              <p mat-line>{{ myProperties[k] }} {{ propertyUnits[k] }}</p>
               <button mat-icon-button color="primary" (click)="clearProp(k)">
-                <mat-icon >clear</mat-icon>
+                <mat-icon>clear</mat-icon>
               </button>
             </mat-grid-tile>
           </div>
         </mat-grid-list>
       </mat-card>
+</div>
 
-      
-      <button mat-raised-button color="primary"  (click)="addProduct()">Añadir Alimento</button>
-      
-   
+<button mat-raised-button color="primary" (click)="addProduct()">
+  Añadir Alimento
+</button>
