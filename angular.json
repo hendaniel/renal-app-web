@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "AppRenalWeb": {
+=======
+    "PocketDoctorWeb": {
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/AppRenalWeb",
+=======
+            "outputPath": "dist/PocketDoctorWeb",
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +67,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "AppRenalWeb:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "AppRenalWeb:build:production"
+=======
+            "browserTarget": "PocketDoctorWeb:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "PocketDoctorWeb:build:production"
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "AppRenalWeb:build"
+=======
+            "browserTarget": "PocketDoctorWeb:build"
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
           }
         },
         "test": {
@@ -105,7 +125,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "AppRenalWeb-e2e": {
+=======
+    "PocketDoctorWeb-e2e": {
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +138,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "AppRenalWeb:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "AppRenalWeb:serve:production"
+=======
+            "devServerTarget": "PocketDoctorWeb:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "PocketDoctorWeb:serve:production"
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
             }
           }
         },
@@ -134,5 +166,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "AppRenalWeb"
+=======
+  "defaultProject": "PocketDoctorWeb"
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
 }

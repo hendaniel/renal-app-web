@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # AppRenalWeb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+=======
+# PocketDoctorWeb
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
 
 ## Development server
 
@@ -25,3 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<<<<<<< HEAD
+=======
+"# AppRenalWeb" 
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af

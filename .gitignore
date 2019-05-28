@@ -4,8 +4,11 @@
 /dist
 /tmp
 /out-tsc
+<<<<<<< HEAD
 # Only exists if Bazel was run
 /bazel-out
+=======
+>>>>>>> acb92d366186903a9a50374e7053ff8fd53d51af
 
 # dependencies
 /node_modules
