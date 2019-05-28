@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -17,5 +17,74 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
+<app-insert-product></app-insert-product>
+-->
+<mat-sidenav-container>
+  <mat-sidenav #menu mode="push" closed class="side-container">
+    <h1>
+      <img
+      class="image"
+        width="50%"
+        height="50%"
+        style="padding-left: 25%"
+        src="assets/images/ico.png"
+      />
+    </h1>
+    
+    <div *ngIf="this.userInfo.isCompany()">
+      <button mat-button routerLink="/new_product">
+        <mat-icon
+        class="menu-icon"
+        aria-hidden="false"
+        aria-label="Menu
+        Icon"
+        >fastfood</mat-icon
+        >
+        <span>Añadir Alimento</span>
+      </button>
+      <br />
+    </div>
+    
+    <div div *ngIf="this.userInfo.isAdmin()">
+      <button mat-button routerLink="/new_habit">
+        <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu Icon"
+        >accessibility</mat-icon
+        >
+        <span>Añadir Hábito</span>
+      </button>
+      <br />
+    </div>
+    
+    <div div *ngIf="this.userInfo.isAdmin()">
+      <button mat-button routerLink="/new_company">
+        <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu Icon"
+        >add</mat-icon
+        >
+        <span>Añadir Empresa</span>
+      </button>
+    </div>
 
-<router-outlet></router-outlet>
+  </mat-sidenav>
+  <mat-sidenav-content class="MyBox">
+    <mat-toolbar class="toolbar-main">
+      <mat-toolbar-row>
+        <span>POCKET DOCTOR</span>
+        <span class="menu-spacer"></span>
+        <div *ngIf="this.userInfo.isLogged()">
+          <button mat-button (click)="logout()" >
+            <span>Cerrar Sesión</span>
+          </button>
+          <button mat-button (click)="menu.toggle()">
+            <mat-icon
+              class="menu-icon"
+              aria-hidden="false"
+              aria-label="Menu Icon"
+              >menu</mat-icon
+            >
+          </button>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

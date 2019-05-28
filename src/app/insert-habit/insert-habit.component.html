@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="box">
+    <form class="habit-input">
+      <mat-form-field class="habit-field">
+        <textarea matInput cdkTextareaAutosize cdkAutosizeMaxRows="5" maxlength="256" name="info" placeholder="Descripción hábito" [(ngModel)]="myHabit.informacion"></textarea>
+        <mat-hint align="end">{{myHabit.informacion.length}} / 256</mat-hint>
+      </mat-form-field>
+        <mat-form-field class="habit-url">
+          <input matInput name="url" placeholder="URL de la imagen" [(ngModel)]="myHabit.imagen"/>
+        </mat-form-field>
+        
+    <button mat-raised-button class="send" name="send" color="primary" (click)="addNewHabit()">Añadir Hábito</button>
+    </form> 
+  </div>
+</div>
+

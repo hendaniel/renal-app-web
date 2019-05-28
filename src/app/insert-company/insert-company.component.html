@@ -1,0 +1,31 @@
+
+  <div class="container">
+    <h3>Añadir Administrador</h3>
+      <div class="box">
+        <form class="com-input">
+            <mat-form-field class="com-username">
+              <input matInput name="username" placeholder="Nombre de Usuario" [(ngModel)]="userToAdd.username"/>
+            </mat-form-field>
+            <mat-form-field class="com-name">
+              <input matInput name="name" placeholder="Nombre de Compañia" [(ngModel)]="userToAdd.nombre"/>
+            </mat-form-field>
+            <mat-form-field class="com-password">
+              <input matInput name="password" type="password" placeholder="Contraseña" [(ngModel)]="userToAdd.password"/>
+            </mat-form-field>
+            <mat-form-field class="com-password">
+              <input matInput name="password2" type="password" placeholder="Confirmar Contraseña" [(ngModel)]="passwordC"/>
+            </mat-form-field>
+            <mat-form-field class="com-role">
+              <mat-label>Rol</mat-label>
+                <mat-select matNativeControl required [(value)]="a" required (selectionChange)="userToAdd.tipo = a">  
+                  <mat-option   value="Administrador">Administrador</mat-option >
+                  <mat-option   value="Empresa">Empresa</mat-option >
+                </mat-select>
+            </mat-form-field>
+            
+        <button mat-raised-button class="send" name="send" color="primary" (click)="addCompany(a)">Añadir Administrador</button>
+        </form> 
+      </div>
+    </div>
+    
+    

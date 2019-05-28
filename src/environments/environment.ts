@@ -1,9 +1,16 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+const myIP = "localhost";
 
 export const environment = {
-  production: false
+  production: false,
+  //TODO
+  urlAddHabit:        "http://"+myIP+":8081/addHabito",
+  urlAddAlimento:     "http://"+myIP+":8081/AddAlimento",
+  urlGetPropiedades:  "http://"+myIP+":8081/getAllPropiedades",
+  urlValidateAdmin:    "http://"+myIP+":8081/validateAdministrador",
+  urlAddAdmin:    "http://"+myIP+":8081/addAdministrador"
 };
 
 /*
