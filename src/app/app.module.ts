@@ -15,17 +15,20 @@ import {
   MatSelectModule,
   MatListModule,
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatGridListModule
 } from "@angular/material";
 
 
 
 
 import { InsertProductComponent } from './insert-product/insert-product.component';
+import { LoginComponent } from './login/login.component';
+
 
 
 @NgModule({
-  declarations: [AppComponent, InsertHabitComponent, InsertProductComponent],
+  declarations: [AppComponent, InsertHabitComponent, InsertProductComponent, LoginComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -38,7 +41,8 @@ import { InsertProductComponent } from './insert-product/insert-product.componen
     MatCardModule,
     FormsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

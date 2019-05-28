@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="box">
+    <form class="login-input">
+      <mat-form-field class="user-name">
+        <input matInput name="usuario" placeholder="Usuario" [(ngModel)]="nombre"/>
+      </mat-form-field>
+      <mat-form-field class="user-password">
+        <input matInput name="password" placeholder="Contraseña" [(ngModel)]="contrasena"/>
+      </mat-form-field>
+      <mat-form-field class="user-rol">
+        <mat-label>Rol</mat-label>
+        <select matNativeControl required >
+          <option></option>
+          <option value="Administrador">Administrador</option>
+          <option value="Empresa">Empresa</option>
+        </select>
+      </mat-form-field>
+      <button mat-raised-button class="login" name="login" color="primary" (click)="login()">Login</button>
+    </form> 
+  </div>
+</div>
