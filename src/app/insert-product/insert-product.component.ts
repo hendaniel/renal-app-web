@@ -63,7 +63,7 @@ export class InsertProductComponent implements OnInit {
   clearProp(k:number){
     this.myProperties[k]=0;
   }
-
+ 
   addProduct(){
     console.log("add product");
     this.productService.addProduct(this.myProduct,JSON.stringify(this.myProperties)).subscribe();

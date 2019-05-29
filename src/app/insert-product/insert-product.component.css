@@ -1,40 +1,22 @@
-.cardProperties{
-    background-color: bisque;
-}
-
 .porperty-button{
     background-color: green;
 }
-
-
-.cardProduct{
-    background-color: blanchedalmond;
+.box{
+  width: 20%;
 }
-
-.container {
-    padding-left: 5%;
-    padding-top: 2%;
-    background-color: whitesmoke;
-    width: 100%;
-    height: 50%;
-  }
-  .box {
-    border-radius: 10px;
-    background-color: white;
-    width: 20%;
-    padding: 10px;
-    align-content: center;
-    text-align: center;
-    float: left;
-  }
-  .product-input{
-      width: 80%;
-  }
-
-  .container2 {
-    padding-right: 5%;
-    padding-top: 2%;
-    background-color: whitesmoke;
-    width: 50%;
-    height: 50%;
-  }
+.boxes{
+  margin-top: 3%;
+  margin-left: 5%;
+  float: left;
+}
+.container{
+  margin-top: 3%;
+  margin-right: 5%;
+  width: 72%;
+  height: 60%;
+  float: right;
+  
+}
+.cardProperties{
+  margin-bottom: 1%;
+}
