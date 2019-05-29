@@ -46,7 +46,7 @@
     </div>
     
     <div div *ngIf="this.userInfo.isAdmin()">
-      <button mat-button routerLink="/new_habit">
+      <button mat-button routerLink="/new_habit" (click)="menu.toggle()">
         <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu Icon"
         >accessibility</mat-icon
         >
@@ -56,7 +56,7 @@
     </div>
     
     <div div *ngIf="this.userInfo.isAdmin()">
-      <button mat-button routerLink="/new_company">
+      <button mat-button routerLink="/new_company" (click)="menu.toggle()">
         <mat-icon class="menu-icon" aria-hidden="false" aria-label="Menu Icon"
         >add</mat-icon
         >
@@ -66,8 +66,8 @@
 
   </mat-sidenav>
   <mat-sidenav-content class="MyBox">
-    <mat-toolbar class="toolbar-main">
-      <mat-toolbar-row>
+    <mat-toolbar class="toolbar-main" >
+      <mat-toolbar-row >
         <span>POCKET DOCTOR</span>
         <span class="menu-spacer"></span>
         <div *ngIf="this.userInfo.isLogged()">
